@@ -13,13 +13,14 @@
 <body>
     <div class="container pt-5">
         <div class="card mx-auto" style="width: 18rem;">
-            <img class="card-img-top" src="" alt="Card image cap">
+            <img class="card-img-top" src="{{ employee.photo.url }}" alt="Card image cap">
             <div class="card-body">
               <p class="card-text m-0">{{ employee.first_name }} {{ employee.last_name }}</p>
               <p class="card-text m-0">{{ employee.designation }}</p>
               <p class="card-text m-0">{{ employee.email_address }}</p>
               <p class="card-text m-0">{{ employee.phone_number }}</p>
             </div>
+            <a href="{% url 'home' %}" class="btn btn-primary">Back to Home</a>
         </div>
     </div>
 </body>
